@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/akinawa/Documents/OpenGL/src/VAO.cpp" "CMakeFiles/App.dir/src/VAO.cpp.o" "gcc" "CMakeFiles/App.dir/src/VAO.cpp.o.d"
   "/home/akinawa/Documents/OpenGL/src/VBO.cpp" "CMakeFiles/App.dir/src/VBO.cpp.o" "gcc" "CMakeFiles/App.dir/src/VBO.cpp.o.d"
   "/home/akinawa/Documents/OpenGL/src/main.cpp" "CMakeFiles/App.dir/src/main.cpp.o" "gcc" "CMakeFiles/App.dir/src/main.cpp.o.d"
+  "/home/akinawa/Documents/OpenGL/src/stb.cpp" "CMakeFiles/App.dir/src/stb.cpp.o" "gcc" "CMakeFiles/App.dir/src/stb.cpp.o.d"
   "" "App" "gcc" "CMakeFiles/App.dir/link.d"
   )
 

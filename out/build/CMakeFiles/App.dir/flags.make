@@ -5,13 +5,13 @@
 # compile CXX with /usr/bin/c++
 C_DEFINES = 
 
-C_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include
+C_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb
 
 C_FLAGS = 
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include
+CXX_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb
 
 CXX_FLAGS = -std=gnu++17
 

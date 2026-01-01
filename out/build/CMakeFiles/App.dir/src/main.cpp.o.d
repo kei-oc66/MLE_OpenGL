@@ -158,4 +158,6 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
  /usr/include/c++/15.2.1/bits/sstream.tcc \
  /home/akinawa/Documents/OpenGL/src/VAO.hpp \
- /home/akinawa/Documents/OpenGL/src/VBO.hpp
+ /home/akinawa/Documents/OpenGL/src/VBO.hpp \
+ /home/akinawa/Documents/OpenGL/externals/stb/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h

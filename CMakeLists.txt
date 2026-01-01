@@ -26,10 +26,12 @@ add_executable(App
     src/VAO.cpp
     src/VBO.cpp
     src/EBO.cpp 
+    src/stb.cpp
 )
 
 target_include_directories(App PRIVATE
     "${CMAKE_SOURCE_DIR}/externals/glad/include"
+    ${CMAKE_SOURCE_DIR}/externals/stb
 )
 
 # This copies your shaders into the same folder as the .App file

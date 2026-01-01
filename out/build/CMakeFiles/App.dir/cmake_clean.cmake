@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/App.dir/src/VBO.cpp.o.d"
   "CMakeFiles/App.dir/src/main.cpp.o"
   "CMakeFiles/App.dir/src/main.cpp.o.d"
+  "CMakeFiles/App.dir/src/stb.cpp.o"
+  "CMakeFiles/App.dir/src/stb.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.
