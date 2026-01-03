@@ -7,11 +7,11 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb
 
-C_FLAGS = 
+C_FLAGS = -g
 
 CXX_DEFINES = 
 
 CXX_INCLUDES = -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -g -std=gnu++17
 

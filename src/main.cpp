@@ -103,7 +103,7 @@ int main() {
   std::string texPath = "/build/resources/textures/";
 
   // Texture
-  Texture brickTex((parentDir + texPath + "simle.jpg").c_str(), GL_TEXTURE_2D,
+  Texture brickTex((parentDir + texPath + "isagi.png").c_str(), GL_TEXTURE_2D,
                    GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
   brickTex.texUnit(shaderProgram, "tex0", 0);
 
@@ -125,7 +125,7 @@ int main() {
     // Clean the back buffer and depth buffer
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     // Tell OpenGL which Shader Program we want to use
-    shaderProgram.use();
+    shaderProgram.Activate();
 
     // Simple timer
     double crntTime = glfwGetTime();
@@ -175,6 +175,7 @@ int main() {
   VBO1.Delete();
   EBO1.Delete();
   brickTex.Delete();
+  shaderProgram.Delete();
   // Delete window before ending the program
   glfwDestroyWindow(window);
   // Terminate GLFW before ending the program

@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/App.dir/externals/glad/src/glad.c.o.d"
   "CMakeFiles/App.dir/src/EBO.cpp.o"
   "CMakeFiles/App.dir/src/EBO.cpp.o.d"
+  "CMakeFiles/App.dir/src/Shader_Class.cpp.o"
+  "CMakeFiles/App.dir/src/Shader_Class.cpp.o.d"
   "CMakeFiles/App.dir/src/Texture.cpp.o"
   "CMakeFiles/App.dir/src/Texture.cpp.o.d"
   "CMakeFiles/App.dir/src/VAO.cpp.o"

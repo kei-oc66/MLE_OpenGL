@@ -13,8 +13,11 @@ Texture::Texture(const char *image, GLenum texType, GLenum slot, GLenum format,
   unsigned char *bytes = stbi_load(image, &widthImg, &heightImg, &numColCh, 0);
   if (bytes == nullptr) {
     std::cerr << "Failed to load Texture : " << image << '\n';
+    std::cerr << "Reason: " << stbi_failure_reason() << std::endl;
     return;
   }
+  std::cout << "Texture loaded: " << image << " | Width: " << widthImg
+            << ", Height: " << heightImg << std::endl;
 
   // Generates an OpenGL texture object
   glGenTextures(1, &ID);
@@ -52,7 +55,7 @@ void Texture::texUnit(Shader &shader, const char *uniform, GLuint unit) {
   // Gets the location of the uniform
   GLuint texUni = glGetUniformLocation(shader.ID, uniform);
   // Shader needs to be activated before changing the value of a uniform
-  shader.use();
+  shader.Activate();
   // Sets the value of the uniform
   glUniform1i(texUni, unit);
 }

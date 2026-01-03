@@ -184,6 +184,30 @@ src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
 
+src/Shader_Class.o: src/Shader_Class.cpp.o
+.PHONY : src/Shader_Class.o
+
+# target to build an object file
+src/Shader_Class.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.o
+.PHONY : src/Shader_Class.cpp.o
+
+src/Shader_Class.i: src/Shader_Class.cpp.i
+.PHONY : src/Shader_Class.i
+
+# target to preprocess a source file
+src/Shader_Class.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.i
+.PHONY : src/Shader_Class.cpp.i
+
+src/Shader_Class.s: src/Shader_Class.cpp.s
+.PHONY : src/Shader_Class.s
+
+# target to generate assembly for a file
+src/Shader_Class.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.s
+.PHONY : src/Shader_Class.cpp.s
+
 src/Texture.o: src/Texture.cpp.o
 .PHONY : src/Texture.o
 
@@ -320,6 +344,9 @@ help:
 	@echo "... src/EBO.o"
 	@echo "... src/EBO.i"
 	@echo "... src/EBO.s"
+	@echo "... src/Shader_Class.o"
+	@echo "... src/Shader_Class.i"
+	@echo "... src/Shader_Class.s"
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"

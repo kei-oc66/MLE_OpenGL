@@ -7,6 +7,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include(FetchContent)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 # Glad
 set(GLAD_SRC "${CMAKE_SOURCE_DIR}/externals/glad/src/glad.c")
 
@@ -28,6 +30,7 @@ add_executable(App
     src/EBO.cpp 
     src/stb.cpp
     src/Texture.cpp
+    src/Shader_Class.cpp
 )
 
 target_include_directories(App PRIVATE
