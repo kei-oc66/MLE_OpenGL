@@ -8,6 +8,7 @@ App: \
   CMakeFiles/App.dir/src/VBO.cpp.o \
   CMakeFiles/App.dir/src/EBO.cpp.o \
   CMakeFiles/App.dir/src/stb.cpp.o \
+  CMakeFiles/App.dir/src/Texture.cpp.o \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
   /usr/lib/libGLX.so \
@@ -62,6 +63,8 @@ CMakeFiles/App.dir/src/VBO.cpp.o:
 CMakeFiles/App.dir/src/EBO.cpp.o:
 
 CMakeFiles/App.dir/src/stb.cpp.o:
+
+CMakeFiles/App.dir/src/Texture.cpp.o:
 
 /usr/lib/libglfw.so.3.4:
 

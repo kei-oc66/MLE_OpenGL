@@ -184,6 +184,30 @@ src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
 
+src/Texture.o: src/Texture.cpp.o
+.PHONY : src/Texture.o
+
+# target to build an object file
+src/Texture.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Texture.cpp.o
+.PHONY : src/Texture.cpp.o
+
+src/Texture.i: src/Texture.cpp.i
+.PHONY : src/Texture.i
+
+# target to preprocess a source file
+src/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
+
+src/Texture.s: src/Texture.cpp.s
+.PHONY : src/Texture.s
+
+# target to generate assembly for a file
+src/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
+
 src/VAO.o: src/VAO.cpp.o
 .PHONY : src/VAO.o
 
@@ -296,6 +320,9 @@ help:
 	@echo "... src/EBO.o"
 	@echo "... src/EBO.i"
 	@echo "... src/EBO.s"
+	@echo "... src/Texture.o"
+	@echo "... src/Texture.i"
+	@echo "... src/Texture.s"
 	@echo "... src/VAO.o"
 	@echo "... src/VAO.i"
 	@echo "... src/VAO.s"
