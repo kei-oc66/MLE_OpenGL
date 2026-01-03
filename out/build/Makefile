@@ -160,6 +160,30 @@ externals/glad/src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/externals/glad/src/glad.c.s
 .PHONY : externals/glad/src/glad.c.s
 
+src/Camera.o: src/Camera.cpp.o
+.PHONY : src/Camera.o
+
+# target to build an object file
+src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
+
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
 src/EBO.o: src/EBO.cpp.o
 .PHONY : src/EBO.o
 
@@ -341,6 +365,9 @@ help:
 	@echo "... externals/glad/src/glad.o"
 	@echo "... externals/glad/src/glad.i"
 	@echo "... externals/glad/src/glad.s"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
 	@echo "... src/EBO.o"
 	@echo "... src/EBO.i"
 	@echo "... src/EBO.s"

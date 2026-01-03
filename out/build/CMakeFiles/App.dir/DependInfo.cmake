@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/akinawa/Documents/OpenGL/externals/glad/src/glad.c" "CMakeFiles/App.dir/externals/glad/src/glad.c.o" "gcc" "CMakeFiles/App.dir/externals/glad/src/glad.c.o.d"
+  "/home/akinawa/Documents/OpenGL/src/Camera.cpp" "CMakeFiles/App.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/App.dir/src/Camera.cpp.o.d"
   "/home/akinawa/Documents/OpenGL/src/EBO.cpp" "CMakeFiles/App.dir/src/EBO.cpp.o" "gcc" "CMakeFiles/App.dir/src/EBO.cpp.o.d"
   "/home/akinawa/Documents/OpenGL/src/Shader_Class.cpp" "CMakeFiles/App.dir/src/Shader_Class.cpp.o" "gcc" "CMakeFiles/App.dir/src/Shader_Class.cpp.o.d"
   "/home/akinawa/Documents/OpenGL/src/Texture.cpp" "CMakeFiles/App.dir/src/Texture.cpp.o" "gcc" "CMakeFiles/App.dir/src/Texture.cpp.o.d"

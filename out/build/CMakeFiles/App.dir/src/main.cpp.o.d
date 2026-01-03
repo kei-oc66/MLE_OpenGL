@@ -375,12 +375,27 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/glm/gtc/type_ptr.inl \
  /usr/include/c++/15.2.1/iostream \
- /home/akinawa/Documents/OpenGL/src/EBO.hpp \
+ /home/akinawa/Documents/OpenGL/src/Camera.hpp \
+ /usr/include/glm/gtx/rotate_vector.hpp \
+ /usr/include/glm/gtx/transform.hpp /usr/include/glm/gtx/transform.inl \
+ /usr/include/glm/gtx/rotate_vector.inl \
+ /usr/include/glm/gtx/vector_angle.hpp \
+ /usr/include/glm/gtx/quaternion.hpp \
+ /usr/include/glm/ext/quaternion_exponential.hpp \
+ /usr/include/glm/ext/quaternion_exponential.inl \
+ /usr/include/glm/gtx/norm.hpp /usr/include/glm/gtx/component_wise.hpp \
+ /usr/include/glm/detail/setup.hpp \
+ /usr/include/glm/gtx/component_wise.inl \
+ /usr/include/glm/ext/scalar_common.hpp \
+ /usr/include/glm/ext/scalar_common.inl /usr/include/glm/gtx/norm.inl \
+ /usr/include/glm/gtx/quaternion.inl \
+ /usr/include/glm/gtx/vector_angle.inl \
  /home/akinawa/Documents/OpenGL/src/Shader_Class.hpp \
  /usr/include/c++/15.2.1/fstream \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/include/c++/15.2.1/bits/fstream.tcc \
+ /home/akinawa/Documents/OpenGL/src/EBO.hpp \
  /home/akinawa/Documents/OpenGL/src/Texture.hpp \
  /home/akinawa/Documents/OpenGL/externals/stb/stb_image.h \
  /usr/include/c++/15.2.1/stdlib.h \

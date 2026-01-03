@@ -15,14 +15,15 @@ namespace fs = std::filesystem;
 // std
 #include <iostream>
 
+#include "Camera.hpp"
 #include "EBO.hpp"
 #include "Shader_Class.hpp"
 #include "Texture.hpp"
 #include "VAO.hpp"
 #include "VBO.hpp"
 
-const unsigned int width = 800;
-const unsigned int height = 800;
+const unsigned int width = 1920;
+const unsigned int height = 1080;
 
 // Vertices coordinates
 GLfloat vertices[] =
@@ -88,35 +89,18 @@ int main() {
   VBO1.Unbind();
   EBO1.Unbind();
 
-  // Gets ID of uniform called "scale"
-  GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-
-  /*
-   * I'm doing this relative path thing in order to centralize all the resources
-   * into one folder and not duplicate them between tutorial folders. You can
-   * just copy paste the resources from the 'Resources' folder and then give a
-   * relative path from this folder to whatever resource you want to get to.
-   * Also note that this requires C++17, so go to Project Properties, C/C++,
-   * Language, and select C++17
-   */
   std::string parentDir = (fs::current_path().fs::path::parent_path()).string();
   std::string texPath = "/build/resources/textures/";
 
   // Texture
-  Texture brickTex((parentDir + texPath + "isagi.png").c_str(), GL_TEXTURE_2D,
-                   GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+  Texture brickTex((parentDir + texPath + "isagi.jpg").c_str(), GL_TEXTURE_2D,
+                   GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
   brickTex.texUnit(shaderProgram, "tex0", 0);
-
-  // Original code from the tutorial
-  /*Texture brickTex("brick.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA,
-  GL_UNSIGNED_BYTE); brickTex.texUnit(shaderProgram, "tex0", 0);*/
-
-  // Variables that help the rotation of the pyramid
-  float rotation = 0.0f;
-  double prevTime = glfwGetTime();
 
   // Enables the Depth Buffer
   glEnable(GL_DEPTH_TEST);
+
+  Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
   // Main while loop
   while (!glfwWindowShouldClose(window)) {
@@ -127,36 +111,9 @@ int main() {
     // Tell OpenGL which Shader Program we want to use
     shaderProgram.Activate();
 
-    // Simple timer
-    double crntTime = glfwGetTime();
-    if (crntTime - prevTime >= 1 / 60) {
-      rotation += 0.5f;
-      prevTime = crntTime;
-    }
+    camera.Inputs(window);
 
-    // Initializes matrices so they are not the null matrix
-    glm::mat4 model = glm::mat4(1.0f);
-    glm::mat4 view = glm::mat4(1.0f);
-    glm::mat4 proj = glm::mat4(1.0f);
-
-    // Assigns different transformations to each matrix
-    model =
-        glm::rotate(model, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
-    view = glm::translate(view, glm::vec3(0.0f, -0.5f, -2.0f));
-    proj = glm::perspective(glm::radians(45.0f), (float)width / height, 0.1f,
-                            100.0f);
-
-    // Outputs the matrices into the Vertex Shader
-    int modelLoc = glGetUniformLocation(shaderProgram.ID, "model");
-    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-    int viewLoc = glGetUniformLocation(shaderProgram.ID, "view");
-    glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-    int projLoc = glGetUniformLocation(shaderProgram.ID, "proj");
-    glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(proj));
-
-    // Assigns a value to the uniform; NOTE: Must always be done after
-    // activating the Shader Program
-    glUniform1f(uniID, 0.5f);
+    camera.Matrix(45.0f, 0.1f, 100.0f, shaderProgram, "camMatrix");
     // Binds texture so that is appears in rendering
     brickTex.Bind();
     // Bind the VAO so OpenGL knows to use it

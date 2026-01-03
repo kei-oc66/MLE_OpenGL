@@ -31,6 +31,7 @@ add_executable(App
     src/stb.cpp
     src/Texture.cpp
     src/Shader_Class.cpp
+    src/Camera.cpp
 )
 
 target_include_directories(App PRIVATE

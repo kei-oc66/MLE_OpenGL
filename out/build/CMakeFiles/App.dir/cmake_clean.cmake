@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "App.pdb"
   "CMakeFiles/App.dir/externals/glad/src/glad.c.o"
   "CMakeFiles/App.dir/externals/glad/src/glad.c.o.d"
+  "CMakeFiles/App.dir/src/Camera.cpp.o"
+  "CMakeFiles/App.dir/src/Camera.cpp.o.d"
   "CMakeFiles/App.dir/src/EBO.cpp.o"
   "CMakeFiles/App.dir/src/EBO.cpp.o.d"
   "CMakeFiles/App.dir/src/Shader_Class.cpp.o"
