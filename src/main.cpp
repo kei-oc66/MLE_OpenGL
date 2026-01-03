@@ -13,10 +13,10 @@
 // Vertices coordinates
 GLfloat vertices[] = {
     //     COORDINATES     /        COLORS      /   TexCoord  //
-    -0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, // Lower left corner
-    -0.5f, 0.5f,  0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f, // Upper left corner
-    0.5f,  0.5f,  0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f, // Upper right corner
-    0.5f,  -0.5f, 0.0f, 1.0f, 1.0f, 1.0f, 1.0f, 0.0f  // Lower right corner
+    0.5f,  0.5f,  0.0f, 1.0f, 0.0f, 0.0f, 1.0f, 1.0f, // Lower left corner
+    0.5f,  -0.5f, 0.0f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f, // Upper left corner
+    -0.5f, -0.5f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, // Upper right corner
+    -0.5f, 0.5f,  0.0f, 1.0f, 1.0f, 0.0f, 0.0f, 1.0f  // Lower right corner
 };
 
 GLuint indices[] = {
@@ -76,12 +76,6 @@ int main() {
   VBO1.Unbind();
   EBO1.Unbind();
 
-  GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-
-  int widthImg, heightImg, numColCh;
-  unsigned char *bytes = stbi_load("../resources/textures/grass_text.jpg",
-                                   &widthImg, &heightImg, &numColCh, 0);
-
   GLuint texture;
   glGenTextures(1, &texture);
   glActiveTexture(GL_TEXTURE0);
@@ -92,16 +86,18 @@ int main() {
   glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
   glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-  glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA,
-               GL_UNSIGNED_BYTE, bytes);
-  glGenerateMipmap(GL_TEXTURE_2D);
+  int widthImg, heightImg, numColCh;
+  unsigned char *bytes = stbi_load("resources/textures/grass_text.jpg",
+                                   &widthImg, &heightImg, &numColCh, 0);
+  if (bytes) {
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA,
+                 GL_UNSIGNED_BYTE, bytes);
+    glGenerateMipmap(GL_TEXTURE_2D);
+  } else {
+    std::cout << "Failed to  load texture" << '\n';
+  }
 
   stbi_image_free(bytes);
-  glBindTexture(GL_TEXTURE_2D, 0);
-
-  GLuint text0Uni = glGetUniformLocation(shaderProgram.ID, "text0");
-  shaderProgram.use();
-  glUniform1i(text0Uni, 0);
 
   // Main while loop
   while (!glfwWindowShouldClose(window)) {
@@ -110,11 +106,9 @@ int main() {
     // Clean the back buffer and assign the new color to it
     glClear(GL_COLOR_BUFFER_BIT);
     // Tell OpenGL which Shader Program we want to use
-    shaderProgram.use();
-
-    glUniform1f(uniID, 0.5f);
-
     glBindTexture(GL_TEXTURE_2D, texture);
+
+    shaderProgram.use();
 
     // Bind the VAO so OpenGL knows to use it
     VAO1.Bind();

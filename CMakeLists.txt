@@ -36,6 +36,7 @@ target_include_directories(App PRIVATE
 
 # This copies your shaders into the same folder as the .App file
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/shaders" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
+#file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/resources/textures" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
 
 # Link libraries
 target_link_libraries(App PRIVATE
