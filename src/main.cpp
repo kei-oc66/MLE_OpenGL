@@ -76,21 +76,26 @@ int main() {
   VBO1.Unbind();
   EBO1.Unbind();
 
-  GLuint texture;
+  unsigned int texture;
   glGenTextures(1, &texture);
-  glActiveTexture(GL_TEXTURE0);
-  glBindTexture(GL_TEXTURE_2D, texture);
-  glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
-  glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-
-  glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-  glTextureParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+  glBindTexture(GL_TEXTURE_2D,
+                texture); // all upcoming GL_TEXTURE_2D operations now have
+                          // effect on this texture object
+  // set the texture wrapping parameters
+  glTexParameteri(
+      GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,
+      GL_REPEAT); // set texture wrapping to GL_REPEAT (default wrapping method)
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+  // set texture filtering parameters
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,
+                  GL_LINEAR_MIPMAP_LINEAR);
+  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
   int widthImg, heightImg, numColCh;
-  unsigned char *bytes = stbi_load("resources/textures/grass_text.jpg",
-                                   &widthImg, &heightImg, &numColCh, 0);
+  unsigned char *bytes = stbi_load("resources/textures/simle.jpg", &widthImg,
+                                   &heightImg, &numColCh, 0);
   if (bytes) {
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, widthImg, heightImg, 0, GL_RGBA,
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, widthImg, heightImg, 0, GL_RGB,
                  GL_UNSIGNED_BYTE, bytes);
     glGenerateMipmap(GL_TEXTURE_2D);
   } else {
