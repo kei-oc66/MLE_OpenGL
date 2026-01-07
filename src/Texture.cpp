@@ -1,6 +1,6 @@
 #include "Texture.hpp"
 
-Texture::Texture(const char *image, GLenum texType, GLenum slot, GLenum format,
+Texture::Texture(const char *image, GLenum texType, GLuint slot, GLenum format,
                  GLenum pixelType) {
   // Assigns the type of the texture ot the texture object
   type = texType;
@@ -11,18 +11,12 @@ Texture::Texture(const char *image, GLenum texType, GLenum slot, GLenum format,
   stbi_set_flip_vertically_on_load(true);
   // Reads the image from a file and stores it in bytes
   unsigned char *bytes = stbi_load(image, &widthImg, &heightImg, &numColCh, 0);
-  if (bytes == nullptr) {
-    std::cerr << "Failed to load Texture : " << image << '\n';
-    std::cerr << "Reason: " << stbi_failure_reason() << std::endl;
-    return;
-  }
-  std::cout << "Texture loaded: " << image << " | Width: " << widthImg
-            << ", Height: " << heightImg << std::endl;
 
   // Generates an OpenGL texture object
   glGenTextures(1, &ID);
   // Assigns the texture to a Texture Unit
-  glActiveTexture(slot);
+  glActiveTexture(GL_TEXTURE0 + slot);
+  unit = slot;
   glBindTexture(texType, ID);
 
   // Configures the type of algorithm that is used to make the image smaller or
@@ -60,7 +54,10 @@ void Texture::texUnit(Shader &shader, const char *uniform, GLuint unit) {
   glUniform1i(texUni, unit);
 }
 
-void Texture::Bind() { glBindTexture(type, ID); }
+void Texture::Bind() {
+  glActiveTexture(GL_TEXTURE0 + unit);
+  glBindTexture(type, ID);
+}
 
 void Texture::Unbind() { glBindTexture(type, 0); }
 
