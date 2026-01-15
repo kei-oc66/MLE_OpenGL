@@ -52,5 +52,11 @@
   "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Camera.cpp.o -c /home/akinawa/Documents/OpenGL/src/Camera.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Camera.cpp",
   "output": "CMakeFiles/App.dir/src/Camera.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Mesh.cpp.o -c /home/akinawa/Documents/OpenGL/src/Mesh.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/src/Mesh.cpp",
+  "output": "CMakeFiles/App.dir/src/Mesh.cpp.o"
 }
 ]

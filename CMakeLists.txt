@@ -18,6 +18,9 @@ find_package(glfw3 CONFIG REQUIRED)
 #GLM
 find_package(glm REQUIRED)
 
+#ASSIMP
+find_package(assimp REQUIRED)
+
 # OpenGL
 find_package(OpenGL REQUIRED)
 
@@ -32,6 +35,7 @@ add_executable(App
     src/Texture.cpp
     src/Shader_Class.cpp
     src/Camera.cpp
+    src/Mesh.cpp
 )
 
 target_include_directories(App PRIVATE
@@ -48,6 +52,7 @@ target_link_libraries(App PRIVATE
     glfw
     ${CMAKE_DL_LIBS}
     ${glm_INCLUDE_DIRS}
+    assimp
     OpenGL::GL
 )
 

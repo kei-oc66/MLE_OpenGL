@@ -11,8 +11,10 @@ App: \
   CMakeFiles/App.dir/src/Texture.cpp.o \
   CMakeFiles/App.dir/src/Shader_Class.cpp.o \
   CMakeFiles/App.dir/src/Camera.cpp.o \
+  CMakeFiles/App.dir/src/Mesh.cpp.o \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libassimp.so \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libstdc++.so \
@@ -41,9 +43,10 @@ App: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o \
+  /usr/lib/libz.so.1 \
+  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib/libX11.so.6 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6
@@ -72,9 +75,13 @@ CMakeFiles/App.dir/src/Shader_Class.cpp.o:
 
 CMakeFiles/App.dir/src/Camera.cpp.o:
 
+CMakeFiles/App.dir/src/Mesh.cpp.o:
+
 /usr/lib/libglfw.so.3.4:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libassimp.so:
 
 /usr/lib/libGLX.so:
 
@@ -132,11 +139,13 @@ CMakeFiles/App.dir/src/Camera.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/crtn.o:
 
+/usr/lib/libz.so.1:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
 /usr/lib/libGLdispatch.so.0:
 
 /usr/lib/libX11.so.6:
-
-/usr/lib/ld-linux-x86-64.so.2:
 
 /usr/lib/libxcb.so.1:
 

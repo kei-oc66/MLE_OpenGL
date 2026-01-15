@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/App.dir/src/Camera.cpp.o.d"
   "CMakeFiles/App.dir/src/EBO.cpp.o"
   "CMakeFiles/App.dir/src/EBO.cpp.o.d"
+  "CMakeFiles/App.dir/src/Mesh.cpp.o"
+  "CMakeFiles/App.dir/src/Mesh.cpp.o.d"
   "CMakeFiles/App.dir/src/Shader_Class.cpp.o"
   "CMakeFiles/App.dir/src/Shader_Class.cpp.o.d"
   "CMakeFiles/App.dir/src/Texture.cpp.o"
