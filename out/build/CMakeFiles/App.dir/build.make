@@ -170,19 +170,19 @@ CMakeFiles/App.dir/src/Texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/Texture.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/Texture.cpp -o CMakeFiles/App.dir/src/Texture.cpp.s
 
-CMakeFiles/App.dir/src/Shader_Class.cpp.o: CMakeFiles/App.dir/flags.make
-CMakeFiles/App.dir/src/Shader_Class.cpp.o: /home/akinawa/Documents/OpenGL/src/Shader_Class.cpp
-CMakeFiles/App.dir/src/Shader_Class.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/App.dir/src/Shader_Class.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/src/Shader_Class.cpp.o -MF CMakeFiles/App.dir/src/Shader_Class.cpp.o.d -o CMakeFiles/App.dir/src/Shader_Class.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader_Class.cpp
+CMakeFiles/App.dir/src/Shader.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/src/Shader.cpp.o: /home/akinawa/Documents/OpenGL/src/Shader.cpp
+CMakeFiles/App.dir/src/Shader.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/App.dir/src/Shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/src/Shader.cpp.o -MF CMakeFiles/App.dir/src/Shader.cpp.o.d -o CMakeFiles/App.dir/src/Shader.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader.cpp
 
-CMakeFiles/App.dir/src/Shader_Class.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/src/Shader_Class.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/src/Shader_Class.cpp > CMakeFiles/App.dir/src/Shader_Class.cpp.i
+CMakeFiles/App.dir/src/Shader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/src/Shader.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/src/Shader.cpp > CMakeFiles/App.dir/src/Shader.cpp.i
 
-CMakeFiles/App.dir/src/Shader_Class.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/Shader_Class.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/Shader_Class.cpp -o CMakeFiles/App.dir/src/Shader_Class.cpp.s
+CMakeFiles/App.dir/src/Shader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/Shader.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/Shader.cpp -o CMakeFiles/App.dir/src/Shader.cpp.s
 
 CMakeFiles/App.dir/src/Camera.cpp.o: CMakeFiles/App.dir/flags.make
 CMakeFiles/App.dir/src/Camera.cpp.o: /home/akinawa/Documents/OpenGL/src/Camera.cpp
@@ -212,6 +212,34 @@ CMakeFiles/App.dir/src/Mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/Mesh.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/Mesh.cpp -o CMakeFiles/App.dir/src/Mesh.cpp.s
 
+CMakeFiles/App.dir/src/Window.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/src/Window.cpp.o: /home/akinawa/Documents/OpenGL/src/Window.cpp
+CMakeFiles/App.dir/src/Window.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/App.dir/src/Window.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/src/Window.cpp.o -MF CMakeFiles/App.dir/src/Window.cpp.o.d -o CMakeFiles/App.dir/src/Window.cpp.o -c /home/akinawa/Documents/OpenGL/src/Window.cpp
+
+CMakeFiles/App.dir/src/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/src/Window.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/src/Window.cpp > CMakeFiles/App.dir/src/Window.cpp.i
+
+CMakeFiles/App.dir/src/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/Window.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/Window.cpp -o CMakeFiles/App.dir/src/Window.cpp.s
+
+CMakeFiles/App.dir/src/TestApp.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/src/TestApp.cpp.o: /home/akinawa/Documents/OpenGL/src/TestApp.cpp
+CMakeFiles/App.dir/src/TestApp.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/App.dir/src/TestApp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/src/TestApp.cpp.o -MF CMakeFiles/App.dir/src/TestApp.cpp.o.d -o CMakeFiles/App.dir/src/TestApp.cpp.o -c /home/akinawa/Documents/OpenGL/src/TestApp.cpp
+
+CMakeFiles/App.dir/src/TestApp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/src/TestApp.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/src/TestApp.cpp > CMakeFiles/App.dir/src/TestApp.cpp.i
+
+CMakeFiles/App.dir/src/TestApp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/TestApp.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/TestApp.cpp -o CMakeFiles/App.dir/src/TestApp.cpp.s
+
 # Object files for target App
 App_OBJECTS = \
 "CMakeFiles/App.dir/src/main.cpp.o" \
@@ -221,9 +249,11 @@ App_OBJECTS = \
 "CMakeFiles/App.dir/src/EBO.cpp.o" \
 "CMakeFiles/App.dir/src/stb.cpp.o" \
 "CMakeFiles/App.dir/src/Texture.cpp.o" \
-"CMakeFiles/App.dir/src/Shader_Class.cpp.o" \
+"CMakeFiles/App.dir/src/Shader.cpp.o" \
 "CMakeFiles/App.dir/src/Camera.cpp.o" \
-"CMakeFiles/App.dir/src/Mesh.cpp.o"
+"CMakeFiles/App.dir/src/Mesh.cpp.o" \
+"CMakeFiles/App.dir/src/Window.cpp.o" \
+"CMakeFiles/App.dir/src/TestApp.cpp.o"
 
 # External object files for target App
 App_EXTERNAL_OBJECTS =
@@ -235,16 +265,18 @@ App: CMakeFiles/App.dir/src/VBO.cpp.o
 App: CMakeFiles/App.dir/src/EBO.cpp.o
 App: CMakeFiles/App.dir/src/stb.cpp.o
 App: CMakeFiles/App.dir/src/Texture.cpp.o
-App: CMakeFiles/App.dir/src/Shader_Class.cpp.o
+App: CMakeFiles/App.dir/src/Shader.cpp.o
 App: CMakeFiles/App.dir/src/Camera.cpp.o
 App: CMakeFiles/App.dir/src/Mesh.cpp.o
+App: CMakeFiles/App.dir/src/Window.cpp.o
+App: CMakeFiles/App.dir/src/TestApp.cpp.o
 App: CMakeFiles/App.dir/build.make
 App: CMakeFiles/App.dir/compiler_depend.ts
 App: /usr/lib/libglfw.so.3.4
 App: /usr/lib/libGLX.so
 App: /usr/lib/libOpenGL.so
 App: CMakeFiles/App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable App"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/App.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

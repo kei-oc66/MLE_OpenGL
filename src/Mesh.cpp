@@ -1,6 +1,6 @@
 #include "Mesh.hpp"
 #include "Camera.hpp"
-#include "Shader_Class.hpp"
+#include "Shader.hpp"
 #include "Texture.hpp"
 #include "VBO.hpp"
 #include <string>

@@ -43,9 +43,9 @@
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Shader_Class.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader_Class.cpp",
-  "file": "/home/akinawa/Documents/OpenGL/src/Shader_Class.cpp",
-  "output": "CMakeFiles/App.dir/src/Shader_Class.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Shader.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/src/Shader.cpp",
+  "output": "CMakeFiles/App.dir/src/Shader.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
@@ -58,5 +58,17 @@
   "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Mesh.cpp.o -c /home/akinawa/Documents/OpenGL/src/Mesh.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Mesh.cpp",
   "output": "CMakeFiles/App.dir/src/Mesh.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Window.cpp.o -c /home/akinawa/Documents/OpenGL/src/Window.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/src/Window.cpp",
+  "output": "CMakeFiles/App.dir/src/Window.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/TestApp.cpp.o -c /home/akinawa/Documents/OpenGL/src/TestApp.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/src/TestApp.cpp",
+  "output": "CMakeFiles/App.dir/src/TestApp.cpp.o"
 }
 ]

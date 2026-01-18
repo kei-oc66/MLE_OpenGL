@@ -9,9 +9,11 @@ App: \
   CMakeFiles/App.dir/src/EBO.cpp.o \
   CMakeFiles/App.dir/src/stb.cpp.o \
   CMakeFiles/App.dir/src/Texture.cpp.o \
-  CMakeFiles/App.dir/src/Shader_Class.cpp.o \
+  CMakeFiles/App.dir/src/Shader.cpp.o \
   CMakeFiles/App.dir/src/Camera.cpp.o \
   CMakeFiles/App.dir/src/Mesh.cpp.o \
+  CMakeFiles/App.dir/src/Window.cpp.o \
+  CMakeFiles/App.dir/src/TestApp.cpp.o \
   /usr/lib/libglfw.so.3.4 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libdl.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/../../../../lib/libassimp.so \
@@ -71,11 +73,15 @@ CMakeFiles/App.dir/src/stb.cpp.o:
 
 CMakeFiles/App.dir/src/Texture.cpp.o:
 
-CMakeFiles/App.dir/src/Shader_Class.cpp.o:
+CMakeFiles/App.dir/src/Shader.cpp.o:
 
 CMakeFiles/App.dir/src/Camera.cpp.o:
 
 CMakeFiles/App.dir/src/Mesh.cpp.o:
+
+CMakeFiles/App.dir/src/Window.cpp.o:
+
+CMakeFiles/App.dir/src/TestApp.cpp.o:
 
 /usr/lib/libglfw.so.3.4:
 

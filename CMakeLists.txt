@@ -33,9 +33,12 @@ add_executable(App
     src/EBO.cpp 
     src/stb.cpp
     src/Texture.cpp
-    src/Shader_Class.cpp
+    src/Shader.cpp
     src/Camera.cpp
     src/Mesh.cpp
+    #src/Model.cpp
+    src/Window.cpp
+    src/TestApp.cpp
 )
 
 target_include_directories(App PRIVATE

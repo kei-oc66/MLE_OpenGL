@@ -297,7 +297,7 @@ CMakeFiles/App.dir/src/Mesh.cpp.o: \
  /usr/include/glm/ext/scalar_common.inl /usr/include/glm/gtx/norm.inl \
  /usr/include/glm/gtx/quaternion.inl \
  /usr/include/glm/gtx/vector_angle.inl \
- /home/akinawa/Documents/OpenGL/src/Shader_Class.hpp \
+ /home/akinawa/Documents/OpenGL/src/Shader.hpp \
  /usr/include/c++/15.2.1/cerrno /usr/include/errno.h \
  /usr/include/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/asm/errno.h /usr/include/asm-generic/errno.h \

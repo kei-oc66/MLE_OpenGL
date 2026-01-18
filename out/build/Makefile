@@ -232,29 +232,53 @@ src/Mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Mesh.cpp.s
 .PHONY : src/Mesh.cpp.s
 
-src/Shader_Class.o: src/Shader_Class.cpp.o
-.PHONY : src/Shader_Class.o
+src/Shader.o: src/Shader.cpp.o
+.PHONY : src/Shader.o
 
 # target to build an object file
-src/Shader_Class.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.o
-.PHONY : src/Shader_Class.cpp.o
+src/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader.cpp.o
+.PHONY : src/Shader.cpp.o
 
-src/Shader_Class.i: src/Shader_Class.cpp.i
-.PHONY : src/Shader_Class.i
+src/Shader.i: src/Shader.cpp.i
+.PHONY : src/Shader.i
 
 # target to preprocess a source file
-src/Shader_Class.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.i
-.PHONY : src/Shader_Class.cpp.i
+src/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
 
-src/Shader_Class.s: src/Shader_Class.cpp.s
-.PHONY : src/Shader_Class.s
+src/Shader.s: src/Shader.cpp.s
+.PHONY : src/Shader.s
 
 # target to generate assembly for a file
-src/Shader_Class.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader_Class.cpp.s
-.PHONY : src/Shader_Class.cpp.s
+src/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
+src/TestApp.o: src/TestApp.cpp.o
+.PHONY : src/TestApp.o
+
+# target to build an object file
+src/TestApp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/TestApp.cpp.o
+.PHONY : src/TestApp.cpp.o
+
+src/TestApp.i: src/TestApp.cpp.i
+.PHONY : src/TestApp.i
+
+# target to preprocess a source file
+src/TestApp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/TestApp.cpp.i
+.PHONY : src/TestApp.cpp.i
+
+src/TestApp.s: src/TestApp.cpp.s
+.PHONY : src/TestApp.s
+
+# target to generate assembly for a file
+src/TestApp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/TestApp.cpp.s
+.PHONY : src/TestApp.cpp.s
 
 src/Texture.o: src/Texture.cpp.o
 .PHONY : src/Texture.o
@@ -328,6 +352,30 @@ src/VBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/VBO.cpp.s
 .PHONY : src/VBO.cpp.s
 
+src/Window.o: src/Window.cpp.o
+.PHONY : src/Window.o
+
+# target to build an object file
+src/Window.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Window.cpp.o
+.PHONY : src/Window.cpp.o
+
+src/Window.i: src/Window.cpp.i
+.PHONY : src/Window.i
+
+# target to preprocess a source file
+src/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
+
+src/Window.s: src/Window.cpp.s
+.PHONY : src/Window.s
+
+# target to generate assembly for a file
+src/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/App.dir/build.make CMakeFiles/App.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -398,9 +446,12 @@ help:
 	@echo "... src/Mesh.o"
 	@echo "... src/Mesh.i"
 	@echo "... src/Mesh.s"
-	@echo "... src/Shader_Class.o"
-	@echo "... src/Shader_Class.i"
-	@echo "... src/Shader_Class.s"
+	@echo "... src/Shader.o"
+	@echo "... src/Shader.i"
+	@echo "... src/Shader.s"
+	@echo "... src/TestApp.o"
+	@echo "... src/TestApp.i"
+	@echo "... src/TestApp.s"
 	@echo "... src/Texture.o"
 	@echo "... src/Texture.i"
 	@echo "... src/Texture.s"
@@ -410,6 +461,9 @@ help:
 	@echo "... src/VBO.o"
 	@echo "... src/VBO.i"
 	@echo "... src/VBO.s"
+	@echo "... src/Window.o"
+	@echo "... src/Window.i"
+	@echo "... src/Window.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
