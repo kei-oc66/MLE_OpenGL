@@ -9,6 +9,8 @@ include(FetchContent)
 
 set(CMAKE_BUILD_TYPE Debug)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # Glad
 set(GLAD_SRC "${CMAKE_SOURCE_DIR}/externals/glad/src/glad.c")
 
@@ -24,6 +26,9 @@ find_package(assimp REQUIRED)
 # OpenGL
 find_package(OpenGL REQUIRED)
 
+# ImGUI
+set(IMGUI_DIR ${CMAKE_CURRENT_SOURCE_DIR}/externals/imgui)
+
 # Your executable
 add_executable(App 
     src/main.cpp
@@ -31,20 +36,35 @@ add_executable(App
     src/VAO.cpp
     src/VBO.cpp
     src/EBO.cpp 
-    src/stb.cpp
+    externals/stb/stb.cpp
     src/Texture.cpp
     src/Shader.cpp
     src/Camera.cpp
     src/Mesh.cpp
-    #src/Model.cpp
     src/Window.cpp
     src/TestApp.cpp
 )
 
-target_include_directories(App PRIVATE
+add_library(imgui
+    ${IMGUI_DIR}/imgui.cpp
+    ${IMGUI_DIR}/imgui_draw.cpp
+    ${IMGUI_DIR}/imgui_tables.cpp
+    ${IMGUI_DIR}/imgui_widgets.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
+)
+
+target_compile_options(imgui PRIVATE -I${IMGUI_DIR})
+
+
+target_include_directories(App PUBLIC
     "${CMAKE_SOURCE_DIR}/externals/glad/include"
     ${CMAKE_SOURCE_DIR}/externals/stb
+    ${IMGUI_DIR}
+    ${IMGUI_DIR}/backends
 )
+
+
 
 # This copies your shaders into the same folder as the .App file
 file(COPY "${CMAKE_CURRENT_SOURCE_DIR}/shaders" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")
@@ -56,6 +76,7 @@ target_link_libraries(App PRIVATE
     ${CMAKE_DL_LIBS}
     ${glm_INCLUDE_DIRS}
     assimp
+    imgui
     OpenGL::GL
 )
 

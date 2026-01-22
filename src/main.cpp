@@ -1,10 +1,19 @@
+#include <imgui.h>
+#include <imgui_impl_glfw.h>
+#include <imgui_impl_opengl3.h>
+
 #include <filesystem>
 namespace fs = std::filesystem;
 
+#include "AsimpModel.hpp"
 #include "Mesh.hpp"
 
 const unsigned int width = 800;
 const unsigned int height = 800;
+
+float xpos{0.0f};
+float ypos{0.0f};
+float zpos{0.0f};
 
 // Vertices coordinates
 Vertex vertices[] =
@@ -48,6 +57,8 @@ Vertex boxVertices[] = { //     COORDINATES     //
 GLuint boxIndices[] = {0, 1, 2, 0, 2, 3, 0, 4, 7, 0, 7, 3, 3, 7, 6, 3, 6, 2,
                        2, 6, 5, 2, 5, 1, 1, 5, 4, 1, 4, 0, 4, 5, 6, 4, 6, 7};
 
+bool spawnBox = false;
+
 int main() {
   // Initialize GLFW
   glfwInit();
@@ -73,6 +84,14 @@ int main() {
 
   // Load GLAD so it configures OpenGL
   gladLoadGL();
+
+  IMGUI_CHECKVERSION();
+  ImGui::CreateContext();
+  ImGui::StyleColorsDark();
+
+  // Initialize ImGui backends
+  ImGui_ImplGlfw_InitForOpenGL(window, true);
+  ImGui_ImplOpenGL3_Init("#version 330");
   // Specify the viewport of OpenGL in the Window
   // In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
   glViewport(0, 0, width, height);
@@ -112,7 +131,7 @@ int main() {
   glm::mat4 lightModel = glm::mat4(1.0f);
   lightModel = glm::translate(lightModel, lightPos);
 
-  glm::vec3 objectPos = glm::vec3(0.0f, 0.0f, 0.0f);
+  glm::vec3 objectPos = glm::vec3(xpos, ypos, zpos);
   glm::mat4 objectModel = glm::mat4(1.0f);
   objectModel = glm::translate(objectModel, objectPos);
 
@@ -150,6 +169,8 @@ int main() {
   glUniform3f(glGetUniformLocation(boxShader.ID, "lightPos"), boxPos.x,
               boxPos.y, boxPos.z);
 
+  Model model1("resources/models/Untitled.obj");
+
   // Enables the Depth Buffer
   glEnable(GL_DEPTH_TEST);
 
@@ -170,8 +191,33 @@ int main() {
 
     // Draws different meshes
     floor.Draw(shaderProgram, camera);
-    light.Draw(lightShader, camera);
-    box.Draw(boxShader, camera);
+    model1.Draw(shaderProgram, camera);
+
+    ImGui_ImplOpenGL3_NewFrame();
+    ImGui_ImplGlfw_NewFrame();
+    ImGui::NewFrame();
+    ImGui::SetNextWindowSize(ImVec2(300, 200));
+    ImGui::Begin("Color");
+    ImGui::Text("king!");
+    if (ImGui::Button("Free money")) {
+      spawnBox = true;
+    }
+
+    if (ImGui::Button("delete")) {
+      spawnBox = false;
+    }
+
+    ImGui::SliderFloat("change x pos", &xpos, 0.0f, 1.0f);
+    ImGui::End();
+
+    if (spawnBox) {
+      glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    } else {
+      glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    }
+    ImGui::Render();
+
+    ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
 
     // Swap the back buffer with the front buffer
     glfwSwapBuffers(window);

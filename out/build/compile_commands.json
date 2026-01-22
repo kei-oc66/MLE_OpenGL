@@ -1,73 +1,109 @@
 [
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/main.cpp.o -c /home/akinawa/Documents/OpenGL/src/main.cpp",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/imgui.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/imgui.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/imgui.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/imgui.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/imgui_draw.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/imgui_draw.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/imgui_draw.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/imgui_tables.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/imgui_tables.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/imgui_tables.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/imgui_widgets.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/imgui_widgets.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/imgui_widgets.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/backends/imgui_impl_glfw.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_glfw.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/backends/imgui_impl_glfw.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++   -g -std=gnu++17 -I/home/akinawa/Documents/OpenGL/externals/imgui -o CMakeFiles/imgui.dir/externals/imgui/backends/imgui_impl_opengl3.cpp.o -c /home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_opengl3.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/imgui.dir/externals/imgui/backends/imgui_impl_opengl3.cpp.o"
+},
+{
+  "directory": "/home/akinawa/Documents/OpenGL/out/build",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/main.cpp.o -c /home/akinawa/Documents/OpenGL/src/main.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/main.cpp",
   "output": "CMakeFiles/App.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/cc  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -o CMakeFiles/App.dir/externals/glad/src/glad.c.o -c /home/akinawa/Documents/OpenGL/externals/glad/src/glad.c",
+  "command": "/usr/bin/cc  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -o CMakeFiles/App.dir/externals/glad/src/glad.c.o -c /home/akinawa/Documents/OpenGL/externals/glad/src/glad.c",
   "file": "/home/akinawa/Documents/OpenGL/externals/glad/src/glad.c",
   "output": "CMakeFiles/App.dir/externals/glad/src/glad.c.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/VAO.cpp.o -c /home/akinawa/Documents/OpenGL/src/VAO.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/VAO.cpp.o -c /home/akinawa/Documents/OpenGL/src/VAO.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/VAO.cpp",
   "output": "CMakeFiles/App.dir/src/VAO.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/VBO.cpp.o -c /home/akinawa/Documents/OpenGL/src/VBO.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/VBO.cpp.o -c /home/akinawa/Documents/OpenGL/src/VBO.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/VBO.cpp",
   "output": "CMakeFiles/App.dir/src/VBO.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/EBO.cpp.o -c /home/akinawa/Documents/OpenGL/src/EBO.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/EBO.cpp.o -c /home/akinawa/Documents/OpenGL/src/EBO.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/EBO.cpp",
   "output": "CMakeFiles/App.dir/src/EBO.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/stb.cpp.o -c /home/akinawa/Documents/OpenGL/src/stb.cpp",
-  "file": "/home/akinawa/Documents/OpenGL/src/stb.cpp",
-  "output": "CMakeFiles/App.dir/src/stb.cpp.o"
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/externals/stb/stb.cpp.o -c /home/akinawa/Documents/OpenGL/externals/stb/stb.cpp",
+  "file": "/home/akinawa/Documents/OpenGL/externals/stb/stb.cpp",
+  "output": "CMakeFiles/App.dir/externals/stb/stb.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Texture.cpp.o -c /home/akinawa/Documents/OpenGL/src/Texture.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/Texture.cpp.o -c /home/akinawa/Documents/OpenGL/src/Texture.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Texture.cpp",
   "output": "CMakeFiles/App.dir/src/Texture.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Shader.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/Shader.cpp.o -c /home/akinawa/Documents/OpenGL/src/Shader.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Shader.cpp",
   "output": "CMakeFiles/App.dir/src/Shader.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Camera.cpp.o -c /home/akinawa/Documents/OpenGL/src/Camera.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/Camera.cpp.o -c /home/akinawa/Documents/OpenGL/src/Camera.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Camera.cpp",
   "output": "CMakeFiles/App.dir/src/Camera.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Mesh.cpp.o -c /home/akinawa/Documents/OpenGL/src/Mesh.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/Mesh.cpp.o -c /home/akinawa/Documents/OpenGL/src/Mesh.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Mesh.cpp",
   "output": "CMakeFiles/App.dir/src/Mesh.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/Window.cpp.o -c /home/akinawa/Documents/OpenGL/src/Window.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/Window.cpp.o -c /home/akinawa/Documents/OpenGL/src/Window.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/Window.cpp",
   "output": "CMakeFiles/App.dir/src/Window.cpp.o"
 },
 {
   "directory": "/home/akinawa/Documents/OpenGL/out/build",
-  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -g -std=gnu++17 -o CMakeFiles/App.dir/src/TestApp.cpp.o -c /home/akinawa/Documents/OpenGL/src/TestApp.cpp",
+  "command": "/usr/bin/c++  -I/home/akinawa/Documents/OpenGL/externals/glad/include -I/home/akinawa/Documents/OpenGL/externals/stb -I/home/akinawa/Documents/OpenGL/externals/imgui -I/home/akinawa/Documents/OpenGL/externals/imgui/backends -g -std=gnu++17 -o CMakeFiles/App.dir/src/TestApp.cpp.o -c /home/akinawa/Documents/OpenGL/src/TestApp.cpp",
   "file": "/home/akinawa/Documents/OpenGL/src/TestApp.cpp",
   "output": "CMakeFiles/App.dir/src/TestApp.cpp.o"
 }

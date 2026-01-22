@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "App.pdb"
   "CMakeFiles/App.dir/externals/glad/src/glad.c.o"
   "CMakeFiles/App.dir/externals/glad/src/glad.c.o.d"
+  "CMakeFiles/App.dir/externals/stb/stb.cpp.o"
+  "CMakeFiles/App.dir/externals/stb/stb.cpp.o.d"
   "CMakeFiles/App.dir/src/Camera.cpp.o"
   "CMakeFiles/App.dir/src/Camera.cpp.o.d"
   "CMakeFiles/App.dir/src/EBO.cpp.o"
@@ -24,8 +26,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/App.dir/src/Window.cpp.o.d"
   "CMakeFiles/App.dir/src/main.cpp.o"
   "CMakeFiles/App.dir/src/main.cpp.o.d"
-  "CMakeFiles/App.dir/src/stb.cpp.o"
-  "CMakeFiles/App.dir/src/stb.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

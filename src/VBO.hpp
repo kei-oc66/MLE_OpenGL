@@ -5,6 +5,7 @@
 
 #include <glm/glm.hpp>
 
+#include <string>
 #include <vector>
 
 struct Vertex {
@@ -12,6 +13,8 @@ struct Vertex {
   glm::vec3 Normal;
   glm::vec3 Colors;
   glm::vec2 TexUV;
+  glm::vec3 Tangent;
+  glm::vec3 Bitangent;
 };
 
 class VBO {

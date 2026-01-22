@@ -1,13 +1,23 @@
 CMakeFiles/App.dir/src/main.cpp.o: \
  /home/akinawa/Documents/OpenGL/src/main.cpp /usr/include/stdc-predef.h \
- /usr/include/c++/15.2.1/filesystem \
- /usr/include/c++/15.2.1/bits/requires_hosted.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
- /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /home/akinawa/Documents/OpenGL/externals/imgui/imgui.h \
+ /home/akinawa/Documents/OpenGL/externals/imgui/imconfig.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/string.h /usr/include/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/strings.h /usr/include/assert.h \
+ /home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_glfw.h \
+ /home/akinawa/Documents/OpenGL/externals/imgui/backends/imgui_impl_opengl3.h \
+ /usr/include/c++/15.2.1/filesystem \
+ /usr/include/c++/15.2.1/bits/requires_hosted.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.2.1/pstl/pstl_config.h \
  /usr/include/c++/15.2.1/bits/version.h \
@@ -21,15 +31,11 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/iosfwd /usr/include/c++/15.2.1/bits/stringfwd.h \
  /usr/include/c++/15.2.1/bits/memoryfwd.h \
  /usr/include/c++/15.2.1/bits/postypes.h /usr/include/c++/15.2.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdarg.h \
- /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
- /usr/include/bits/types/mbstate_t.h \
+ /usr/include/wchar.h /usr/include/bits/floatn.h \
+ /usr/include/bits/floatn-common.h /usr/include/bits/wchar.h \
+ /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/c++/15.2.1/stdexcept \
+ /usr/include/bits/types/FILE.h /usr/include/c++/15.2.1/stdexcept \
  /usr/include/c++/15.2.1/exception \
  /usr/include/c++/15.2.1/bits/exception.h \
  /usr/include/c++/15.2.1/bits/exception_ptr.h \
@@ -171,11 +177,17 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/ext/aligned_buffer.h \
  /usr/include/c++/15.2.1/bits/fs_dir.h \
  /usr/include/c++/15.2.1/bits/fs_ops.h \
- /home/akinawa/Documents/OpenGL/src/Mesh.hpp \
- /home/akinawa/Documents/OpenGL/src/Camera.hpp /usr/include/GLFW/glfw3.h \
+ /home/akinawa/Documents/OpenGL/src/AsimpModel.hpp \
  /home/akinawa/Documents/OpenGL/externals/glad/include/glad/glad.h \
  /home/akinawa/Documents/OpenGL/externals/glad/include/KHR/khrplatform.h \
- /usr/include/glm/glm.hpp /usr/include/glm/detail/_fixes.hpp \
+ /usr/include/assimp/Importer.hpp /usr/include/assimp/types.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
+ /usr/include/limits.h /usr/include/bits/posix1_lim.h \
+ /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
+ /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
+ /usr/include/bits/uio_lim.h /usr/include/assimp/defs.h \
+ /usr/include/assimp/config.h /usr/include/assimp/vector2.h \
  /usr/include/c++/15.2.1/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -195,16 +207,37 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/15.2.1/tr1/poly_laguerre.tcc \
  /usr/include/c++/15.2.1/tr1/riemann_zeta.tcc \
- /usr/include/glm/detail/setup.hpp /usr/include/c++/15.2.1/cassert \
- /usr/include/assert.h /usr/include/glm/simd/platform.h \
- /usr/include/c++/15.2.1/climits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/limits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/syslimits.h \
- /usr/include/limits.h /usr/include/bits/posix1_lim.h \
- /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
- /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/c++/15.2.1/cfloat \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/float.h \
+ /usr/include/assimp/vector3.h /usr/include/assimp/color4.h \
+ /usr/include/assimp/matrix3x3.h /usr/include/assimp/matrix4x4.h \
+ /usr/include/assimp/quaternion.h /usr/include/c++/15.2.1/cstring \
+ /usr/include/assimp/vector2.inl /usr/include/assimp/vector3.inl \
+ /usr/include/assimp/color4.inl /usr/include/assimp/matrix3x3.inl \
+ /usr/include/c++/15.2.1/algorithm \
+ /usr/include/c++/15.2.1/bits/stl_algo.h \
+ /usr/include/c++/15.2.1/bits/algorithmfwd.h \
+ /usr/include/c++/15.2.1/bits/stl_heap.h \
+ /usr/include/c++/15.2.1/bits/uniform_int_dist.h \
+ /usr/include/c++/15.2.1/bits/stl_tempbuf.h \
+ /usr/include/c++/15.2.1/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/15.2.1/pstl/execution_defs.h \
+ /usr/include/assimp/matrix4x4.inl /usr/include/assimp/MathFunctions.h \
+ /usr/include/assimp/quaternion.inl /usr/include/assimp/postprocess.h \
+ /usr/include/assimp/scene.h /usr/include/assimp/texture.h \
+ /usr/include/assimp/Compiler/pushpack1.h \
+ /usr/include/assimp/Compiler/poppack1.h /usr/include/assimp/mesh.h \
+ /usr/include/assimp/aabb.h /usr/include/c++/15.2.1/unordered_set \
+ /usr/include/c++/15.2.1/bits/unordered_set.h \
+ /usr/include/c++/15.2.1/bits/hashtable.h \
+ /usr/include/c++/15.2.1/bits/hashtable_policy.h \
+ /usr/include/c++/15.2.1/bits/enable_special_members.h \
+ /usr/include/c++/15.2.1/bits/node_handle.h \
+ /usr/include/c++/15.2.1/bits/erase_if.h /usr/include/assimp/light.h \
+ /usr/include/assimp/camera.h /usr/include/assimp/material.h \
+ /usr/include/assimp/material.inl /usr/include/assimp/anim.h \
+ /usr/include/assimp/metadata.h /usr/include/glm/glm.hpp \
+ /usr/include/glm/detail/_fixes.hpp /usr/include/glm/detail/setup.hpp \
+ /usr/include/c++/15.2.1/cassert /usr/include/glm/simd/platform.h \
+ /usr/include/c++/15.2.1/climits /usr/include/c++/15.2.1/cfloat \
  /usr/include/glm/fwd.hpp /usr/include/glm/detail/qualifier.hpp \
  /usr/include/glm/detail/setup.hpp /usr/include/glm/vec2.hpp \
  /usr/include/glm/ext/vector_bool2.hpp \
@@ -230,11 +263,7 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/bits/std_function.h \
  /usr/include/c++/15.2.1/unordered_map \
  /usr/include/c++/15.2.1/bits/unordered_map.h \
- /usr/include/c++/15.2.1/bits/hashtable.h \
- /usr/include/c++/15.2.1/bits/hashtable_policy.h \
- /usr/include/c++/15.2.1/bits/enable_special_members.h \
- /usr/include/c++/15.2.1/bits/node_handle.h \
- /usr/include/c++/15.2.1/bits/erase_if.h /usr/include/c++/15.2.1/vector \
+ /usr/include/c++/15.2.1/vector \
  /usr/include/c++/15.2.1/bits/stl_uninitialized.h \
  /usr/include/c++/15.2.1/bits/stl_vector.h \
  /usr/include/c++/15.2.1/bits/stl_bvector.h \
@@ -343,6 +372,10 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/glm/ext/matrix_transform.hpp \
  /usr/include/glm/ext/matrix_transform.inl \
  /usr/include/glm/gtc/matrix_transform.inl \
+ /home/akinawa/Documents/OpenGL/externals/stb/stb_image.h \
+ /usr/include/c++/15.2.1/stdlib.h \
+ /home/akinawa/Documents/OpenGL/src/Mesh.hpp \
+ /home/akinawa/Documents/OpenGL/src/Camera.hpp /usr/include/GLFW/glfw3.h \
  /usr/include/glm/gtc/type_ptr.hpp /usr/include/glm/gtc/quaternion.hpp \
  /usr/include/glm/ext/vector_relational.hpp \
  /usr/include/glm/ext/vector_relational.inl \
@@ -375,9 +408,7 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/glm/ext/vector_int1_sized.hpp \
  /usr/include/glm/ext/vector_uint1.hpp \
  /usr/include/glm/ext/vector_uint1_sized.hpp \
- /usr/include/c++/15.2.1/cstring /usr/include/string.h \
- /usr/include/strings.h /usr/include/glm/gtc/type_ptr.inl \
- /usr/include/glm/gtx/rotate_vector.hpp \
+ /usr/include/glm/gtc/type_ptr.inl /usr/include/glm/gtx/rotate_vector.hpp \
  /usr/include/glm/gtx/transform.hpp /usr/include/glm/gtx/transform.inl \
  /usr/include/glm/gtx/rotate_vector.inl \
  /usr/include/glm/gtx/vector_angle.hpp \
@@ -399,7 +430,8 @@ CMakeFiles/App.dir/src/main.cpp.o: \
  /usr/include/c++/15.2.1/iostream \
  /home/akinawa/Documents/OpenGL/src/EBO.hpp \
  /home/akinawa/Documents/OpenGL/src/Texture.hpp \
- /home/akinawa/Documents/OpenGL/externals/stb/stb_image.h \
- /usr/include/c++/15.2.1/stdlib.h \
  /home/akinawa/Documents/OpenGL/src/VAO.hpp \
- /home/akinawa/Documents/OpenGL/src/VBO.hpp
+ /home/akinawa/Documents/OpenGL/src/VBO.hpp /usr/include/c++/15.2.1/map \
+ /usr/include/c++/15.2.1/bits/stl_tree.h \
+ /usr/include/c++/15.2.1/bits/stl_map.h \
+ /usr/include/c++/15.2.1/bits/stl_multimap.h

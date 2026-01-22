@@ -142,19 +142,19 @@ CMakeFiles/App.dir/src/EBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/EBO.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/EBO.cpp -o CMakeFiles/App.dir/src/EBO.cpp.s
 
-CMakeFiles/App.dir/src/stb.cpp.o: CMakeFiles/App.dir/flags.make
-CMakeFiles/App.dir/src/stb.cpp.o: /home/akinawa/Documents/OpenGL/src/stb.cpp
-CMakeFiles/App.dir/src/stb.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/App.dir/src/stb.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/src/stb.cpp.o -MF CMakeFiles/App.dir/src/stb.cpp.o.d -o CMakeFiles/App.dir/src/stb.cpp.o -c /home/akinawa/Documents/OpenGL/src/stb.cpp
+CMakeFiles/App.dir/externals/stb/stb.cpp.o: CMakeFiles/App.dir/flags.make
+CMakeFiles/App.dir/externals/stb/stb.cpp.o: /home/akinawa/Documents/OpenGL/externals/stb/stb.cpp
+CMakeFiles/App.dir/externals/stb/stb.cpp.o: CMakeFiles/App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/akinawa/Documents/OpenGL/out/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/App.dir/externals/stb/stb.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/App.dir/externals/stb/stb.cpp.o -MF CMakeFiles/App.dir/externals/stb/stb.cpp.o.d -o CMakeFiles/App.dir/externals/stb/stb.cpp.o -c /home/akinawa/Documents/OpenGL/externals/stb/stb.cpp
 
-CMakeFiles/App.dir/src/stb.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/src/stb.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/src/stb.cpp > CMakeFiles/App.dir/src/stb.cpp.i
+CMakeFiles/App.dir/externals/stb/stb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/App.dir/externals/stb/stb.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/akinawa/Documents/OpenGL/externals/stb/stb.cpp > CMakeFiles/App.dir/externals/stb/stb.cpp.i
 
-CMakeFiles/App.dir/src/stb.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/src/stb.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/src/stb.cpp -o CMakeFiles/App.dir/src/stb.cpp.s
+CMakeFiles/App.dir/externals/stb/stb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/App.dir/externals/stb/stb.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/akinawa/Documents/OpenGL/externals/stb/stb.cpp -o CMakeFiles/App.dir/externals/stb/stb.cpp.s
 
 CMakeFiles/App.dir/src/Texture.cpp.o: CMakeFiles/App.dir/flags.make
 CMakeFiles/App.dir/src/Texture.cpp.o: /home/akinawa/Documents/OpenGL/src/Texture.cpp
@@ -247,7 +247,7 @@ App_OBJECTS = \
 "CMakeFiles/App.dir/src/VAO.cpp.o" \
 "CMakeFiles/App.dir/src/VBO.cpp.o" \
 "CMakeFiles/App.dir/src/EBO.cpp.o" \
-"CMakeFiles/App.dir/src/stb.cpp.o" \
+"CMakeFiles/App.dir/externals/stb/stb.cpp.o" \
 "CMakeFiles/App.dir/src/Texture.cpp.o" \
 "CMakeFiles/App.dir/src/Shader.cpp.o" \
 "CMakeFiles/App.dir/src/Camera.cpp.o" \
@@ -263,7 +263,7 @@ App: CMakeFiles/App.dir/externals/glad/src/glad.c.o
 App: CMakeFiles/App.dir/src/VAO.cpp.o
 App: CMakeFiles/App.dir/src/VBO.cpp.o
 App: CMakeFiles/App.dir/src/EBO.cpp.o
-App: CMakeFiles/App.dir/src/stb.cpp.o
+App: CMakeFiles/App.dir/externals/stb/stb.cpp.o
 App: CMakeFiles/App.dir/src/Texture.cpp.o
 App: CMakeFiles/App.dir/src/Shader.cpp.o
 App: CMakeFiles/App.dir/src/Camera.cpp.o
@@ -273,6 +273,7 @@ App: CMakeFiles/App.dir/src/TestApp.cpp.o
 App: CMakeFiles/App.dir/build.make
 App: CMakeFiles/App.dir/compiler_depend.ts
 App: /usr/lib/libglfw.so.3.4
+App: libimgui.a
 App: /usr/lib/libGLX.so
 App: /usr/lib/libOpenGL.so
 App: CMakeFiles/App.dir/link.txt
